@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-cinnabarlab-37C92B66-A1EE-4746-AB17-71A733E0C433</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.AzureADB2C.UI" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cinnabarlab.Infrastructure\Cinnabarlab.Infrastructure.csproj" />
+    <ProjectReference Include="..\Cinnabarlab.Infrastructure.Authentication\Cinnabarlab.Infrastructure.Authentication.csproj" />
+  </ItemGroup>
+
+</Project>
