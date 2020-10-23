@@ -2,8 +2,7 @@ using Cinnabarlab.Infrastructure.Authentication;
 using Cinnabarlab.Infrastructure.Authentication.PasswordHasher;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.AzureADB2C.UI;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -25,9 +24,26 @@ namespace Cinnabarlab.UI.Web
         {
             services.AddScoped<IPasswordHasher, PasswordHasher>();
 
-            services.AddAuthentication(AzureADB2CDefaults.BearerAuthenticationScheme)
-                .AddAzureADB2CBearer(options => Configuration.Bind("AzureAdB2C", options));
+            services.AddSpaStaticFiles(configuration: options => { options.RootPath = "wwwroot"; });
             services.AddControllers();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("VueCorsPolicy", builder =>
+                {
+                    builder
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowCredentials()
+                    .WithOrigins("https://localhost:5001");
+                });
+            });
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(options =>
+                {
+                    options.Authority = Configuration["Okta:Authority"];
+                    options.Audience = "api://default";
+                });
+            services.AddMvc(option => option.EnableEndpointRouting = false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,13 +54,23 @@ namespace Cinnabarlab.UI.Web
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
-
+            app.UseCors("VueCorsPolicy");
+            app.UseAuthentication();
+            app.UseMvc();
             app.UseRouting();
-
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
             app.UseAuthentication();
             app.UseAuthorization();
+            app.UseSpaStaticFiles();
+            app.UseSpa(configuration: builder =>
+            {
+                if (env.IsDevelopment())
+                {
+                    builder.UseProxyToSpaDevelopmentServer("http://localhost:8080");
+                }
+            });
 
+            app.UseHttpsRedirection();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
