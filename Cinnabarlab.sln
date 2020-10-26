@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1267
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinnabarlab.Tests", "Cinnabarlab.Tests\Cinnabarlab.Tests.csproj", "{74BE04F2-1D30-47A4-833B-8DEB3AC4164F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinnabarlab.Data", "Cinnabarlab.Data\Cinnabarlab.Data.csproj", "{739BBFF8-9726-4E87-8580-8C78C5EB14ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinnabarlab.Infrastructure", "Cinnabarlab.Infrastructure\Cinnabarlab.Infrastructure.csproj", "{D1750DCA-651B-4DA8-8608-427B9F62C9A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinnabarlab.Infrastructure.Authentication", "Cinnabarlab.Infrastructure.Authentication\Cinnabarlab.Infrastructure.Authentication.csproj", "{83A619AF-65AC-4B74-BEC8-1C6F960A7EE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinnabarlab.Infrastructure.Blog", "Cinnabarlab.Infrastructure.Blog\Cinnabarlab.Infrastructure.Blog.csproj", "{49C474FF-C2A6-41FD-B727-301AF51C090A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinnabarlab.Infrastructure.Training", "Cinnabarlab.Infrastructure.Training\Cinnabarlab.Infrastructure.Training.csproj", "{03AF5833-0393-4F9D-A531-F87547F1FF09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinnabarlab.UI.Web", "Cinnabarlab.UI.Web\Cinnabarlab.UI.Web.csproj", "{738D36E8-6998-4123-8392-59AA7DF0CE30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74BE04F2-1D30-47A4-833B-8DEB3AC4164F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74BE04F2-1D30-47A4-833B-8DEB3AC4164F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74BE04F2-1D30-47A4-833B-8DEB3AC4164F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74BE04F2-1D30-47A4-833B-8DEB3AC4164F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{739BBFF8-9726-4E87-8580-8C78C5EB14ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{739BBFF8-9726-4E87-8580-8C78C5EB14ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{739BBFF8-9726-4E87-8580-8C78C5EB14ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{739BBFF8-9726-4E87-8580-8C78C5EB14ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1750DCA-651B-4DA8-8608-427B9F62C9A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1750DCA-651B-4DA8-8608-427B9F62C9A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1750DCA-651B-4DA8-8608-427B9F62C9A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1750DCA-651B-4DA8-8608-427B9F62C9A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83A619AF-65AC-4B74-BEC8-1C6F960A7EE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A619AF-65AC-4B74-BEC8-1C6F960A7EE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A619AF-65AC-4B74-BEC8-1C6F960A7EE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A619AF-65AC-4B74-BEC8-1C6F960A7EE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49C474FF-C2A6-41FD-B727-301AF51C090A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C474FF-C2A6-41FD-B727-301AF51C090A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C474FF-C2A6-41FD-B727-301AF51C090A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C474FF-C2A6-41FD-B727-301AF51C090A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03AF5833-0393-4F9D-A531-F87547F1FF09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03AF5833-0393-4F9D-A531-F87547F1FF09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03AF5833-0393-4F9D-A531-F87547F1FF09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03AF5833-0393-4F9D-A531-F87547F1FF09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{738D36E8-6998-4123-8392-59AA7DF0CE30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{738D36E8-6998-4123-8392-59AA7DF0CE30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{738D36E8-6998-4123-8392-59AA7DF0CE30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{738D36E8-6998-4123-8392-59AA7DF0CE30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7949D8D6-1045-497C-B3C3-C0AD01878C8F}
+	EndGlobalSection
+EndGlobal
