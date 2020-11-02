@@ -1,14 +1,20 @@
 using System;
+using Cinnabarlab.Data;
 using Xunit;
 
 namespace Cinnabarlab.Tests
 {
-    public class UnitTest1
+  public class UnitTest1
+  {
+    [Fact]
+    public void QueryTest()
     {
-        [Fact]
-        public void Test1()
-        {
-
-        }
+      DataManager.QueryTest();
     }
+    [Fact]
+    public void ProcTest()
+    {
+      DataManager.ProcedureTest();
+    }
+  }
 }
