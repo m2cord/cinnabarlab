@@ -17,12 +17,13 @@ namespace Cinnabarlab.Data
       {
         string cmd = "select[count],[value] from test.[values]";
         var command = new SqlCommand(cmd, con);
+        string result; //check in debug
 
         using (SqlDataReader reader = command.ExecuteReader())
         {
           while (reader.Read())
           {
-            Console.WriteLine($"Count: {reader[0]}, Value: {reader[1]}");
+            result = $"Count: {reader[0]}, Value: {reader[1]}";
           }
         }
       }
