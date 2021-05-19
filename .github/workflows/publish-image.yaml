@@ -66,8 +66,6 @@ jobs:
   build-and-publish:
     name: Build and Publish Cinnabarlab
     runs-on: ubuntu-latest
-    env:
-      working-directory: './frontend/cinnabarlab-frontend'
     needs: [test-frontend, build-backend]
     permissions: 
       contents: read
@@ -85,7 +83,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          context: ./backend
+          context: ./backend/Cinnabarlab.Api
           tags: |
             docker.pkg.github.com/${{ github.repository }}/backend:${{github.sha}}
             docker.pkg.github.com/${{ github.repository }}/backend:latest
