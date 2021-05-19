@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Cinnabarlab.Plugins/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Cinnabarlab.Plugins.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cinnabarlab.Plugins.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cinnabarlab.Plugins/1.0.0": {
+      "type": "project",
+      "path": "../Cinnabarlab.Plugins/Cinnabarlab.Plugins.csproj",
+      "msbuildProject": "../Cinnabarlab.Plugins/Cinnabarlab.Plugins.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Cinnabarlab.Plugins >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Dominik\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Blog\\Cinnabarlab.Plugins.Blog.csproj",
+      "projectName": "Cinnabarlab.Plugins.Blog",
+      "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Blog\\Cinnabarlab.Plugins.Blog.csproj",
+      "packagesPath": "C:\\Users\\Dominik\\.nuget\\packages\\",
+      "outputPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Blog\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Dominik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins\\Cinnabarlab.Plugins.csproj": {
+              "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins\\Cinnabarlab.Plugins.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Cinnabarlab.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Cinnabarlab.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cinnabarlab.Data.dll": {}
+        }
+      },
+      "Cinnabarlab.Plugins/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Cinnabarlab.Plugins.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cinnabarlab.Plugins.dll": {}
+        }
+      },
+      "Cinnabarlab.Plugins.Blog/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Cinnabarlab.Plugins": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cinnabarlab.Plugins.Blog.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cinnabarlab.Plugins.Blog.dll": {}
+        }
+      },
+      "Cinnabarlab.Plugins.Training/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Cinnabarlab.Plugins": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cinnabarlab.Plugins.Training.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cinnabarlab.Plugins.Training.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cinnabarlab.Data/1.0.0": {
+      "type": "project",
+      "path": "../Cinnabarlab.Data/Cinnabarlab.Data.csproj",
+      "msbuildProject": "../Cinnabarlab.Data/Cinnabarlab.Data.csproj"
+    },
+    "Cinnabarlab.Plugins/1.0.0": {
+      "type": "project",
+      "path": "../Cinnabarlab.Plugins/Cinnabarlab.Plugins.csproj",
+      "msbuildProject": "../Cinnabarlab.Plugins/Cinnabarlab.Plugins.csproj"
+    },
+    "Cinnabarlab.Plugins.Blog/1.0.0": {
+      "type": "project",
+      "path": "../Cinnabarlab.Plugins.Blog/Cinnabarlab.Plugins.Blog.csproj",
+      "msbuildProject": "../Cinnabarlab.Plugins.Blog/Cinnabarlab.Plugins.Blog.csproj"
+    },
+    "Cinnabarlab.Plugins.Training/1.0.0": {
+      "type": "project",
+      "path": "../Cinnabarlab.Plugins.Training/Cinnabarlab.Plugins.Training.csproj",
+      "msbuildProject": "../Cinnabarlab.Plugins.Training/Cinnabarlab.Plugins.Training.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Cinnabarlab.Data >= 1.0.0",
+      "Cinnabarlab.Plugins >= 1.0.0",
+      "Cinnabarlab.Plugins.Blog >= 1.0.0",
+      "Cinnabarlab.Plugins.Training >= 1.0.0",
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.10.13",
+      "Swashbuckle.AspNetCore >= 5.6.3"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Dominik\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Api\\Cinnabarlab.Api.csproj",
+      "projectName": "Cinnabarlab.Api",
+      "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Api\\Cinnabarlab.Api.csproj",
+      "packagesPath": "C:\\Users\\Dominik\\.nuget\\packages\\",
+      "outputPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Api\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Dominik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Data\\Cinnabarlab.Data.csproj": {
+              "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Data\\Cinnabarlab.Data.csproj"
+            },
+            "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Blog\\Cinnabarlab.Plugins.Blog.csproj": {
+              "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Blog\\Cinnabarlab.Plugins.Blog.csproj"
+            },
+            "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Training\\Cinnabarlab.Plugins.Training.csproj": {
+              "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Training\\Cinnabarlab.Plugins.Training.csproj"
+            },
+            "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins\\Cinnabarlab.Plugins.csproj": {
+              "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins\\Cinnabarlab.Plugins.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+            "target": "Package",
+            "version": "[1.10.13, )"
+          },
+          "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "[5.6.3, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Swashbuckle.AspNetCore. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Swashbuckle.AspNetCore",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.VisualStudio.Azure.Containers.Tools.Targets. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.VisualStudio.Azure.Containers.Tools.Targets",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}

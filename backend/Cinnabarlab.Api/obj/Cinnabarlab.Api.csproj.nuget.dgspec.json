@@ -1,0 +1,307 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Api\\Cinnabarlab.Api.csproj": {}
+  },
+  "projects": {
+    "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Api\\Cinnabarlab.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Api\\Cinnabarlab.Api.csproj",
+        "projectName": "Cinnabarlab.Api",
+        "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Api\\Cinnabarlab.Api.csproj",
+        "packagesPath": "C:\\Users\\Dominik\\.nuget\\packages\\",
+        "outputPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dominik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Data\\Cinnabarlab.Data.csproj": {
+                "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Data\\Cinnabarlab.Data.csproj"
+              },
+              "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Blog\\Cinnabarlab.Plugins.Blog.csproj": {
+                "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Blog\\Cinnabarlab.Plugins.Blog.csproj"
+              },
+              "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Training\\Cinnabarlab.Plugins.Training.csproj": {
+                "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Training\\Cinnabarlab.Plugins.Training.csproj"
+              },
+              "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins\\Cinnabarlab.Plugins.csproj": {
+                "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins\\Cinnabarlab.Plugins.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.13, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Data\\Cinnabarlab.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Data\\Cinnabarlab.Data.csproj",
+        "projectName": "Cinnabarlab.Data",
+        "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Data\\Cinnabarlab.Data.csproj",
+        "packagesPath": "C:\\Users\\Dominik\\.nuget\\packages\\",
+        "outputPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dominik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Blog\\Cinnabarlab.Plugins.Blog.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Blog\\Cinnabarlab.Plugins.Blog.csproj",
+        "projectName": "Cinnabarlab.Plugins.Blog",
+        "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Blog\\Cinnabarlab.Plugins.Blog.csproj",
+        "packagesPath": "C:\\Users\\Dominik\\.nuget\\packages\\",
+        "outputPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Blog\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dominik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins\\Cinnabarlab.Plugins.csproj": {
+                "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins\\Cinnabarlab.Plugins.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Training\\Cinnabarlab.Plugins.Training.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Training\\Cinnabarlab.Plugins.Training.csproj",
+        "projectName": "Cinnabarlab.Plugins.Training",
+        "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Training\\Cinnabarlab.Plugins.Training.csproj",
+        "packagesPath": "C:\\Users\\Dominik\\.nuget\\packages\\",
+        "outputPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins.Training\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dominik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins\\Cinnabarlab.Plugins.csproj": {
+                "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins\\Cinnabarlab.Plugins.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins\\Cinnabarlab.Plugins.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins\\Cinnabarlab.Plugins.csproj",
+        "projectName": "Cinnabarlab.Plugins",
+        "projectPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins\\Cinnabarlab.Plugins.csproj",
+        "packagesPath": "C:\\Users\\Dominik\\.nuget\\packages\\",
+        "outputPath": "D:\\sources\\cinnabarlab\\backend\\Cinnabarlab.Plugins\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dominik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

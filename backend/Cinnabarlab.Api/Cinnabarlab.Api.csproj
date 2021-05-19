@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>64e7e5d7-3940-4a86-bf2a-8fa6aa80b3b0</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cinnabarlab.Data\Cinnabarlab.Data.csproj" />
+    <ProjectReference Include="..\Cinnabarlab.Plugins.Blog\Cinnabarlab.Plugins.Blog.csproj" />
+    <ProjectReference Include="..\Cinnabarlab.Plugins.Training\Cinnabarlab.Plugins.Training.csproj" />
+    <ProjectReference Include="..\Cinnabarlab.Plugins\Cinnabarlab.Plugins.csproj" />
+  </ItemGroup>
+
+</Project>
