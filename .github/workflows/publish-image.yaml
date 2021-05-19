@@ -25,7 +25,7 @@ jobs:
     name: Build Cinnabarlab Web Frontend
     runs-on: ubuntu-latest
     env:
-      working-directory: './frontend'
+      working-directory: './frontend/cinnabarlab-frontend'
     steps:
       - uses: actions/checkout@v2
       - name: npm install
@@ -39,7 +39,7 @@ jobs:
     name: Test Cinnabarlab Web Frontend
     runs-on: ubuntu-latest
     env:
-      working-directory: './frontend'
+      working-directory: './frontend/cinnabarlab-frontend'
     needs: build-frontend
     strategy:
       matrix:
