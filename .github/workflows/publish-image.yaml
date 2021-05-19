@@ -81,7 +81,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build container image
         env:
-          branch: ${{GITHUB_REF#refs/heads/}}
+          branch: ${GITHUB_REF#refs/heads/}
         uses: docker/build-push-action@v2
         with:
           push: true
