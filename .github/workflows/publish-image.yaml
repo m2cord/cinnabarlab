@@ -83,7 +83,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          context: ./backend/Cinnabarlab.Api
+          context: ./backend
           tags: |
             docker.pkg.github.com/${{ github.repository }}/backend:${{github.sha}}
             docker.pkg.github.com/${{ github.repository }}/backend:latest
