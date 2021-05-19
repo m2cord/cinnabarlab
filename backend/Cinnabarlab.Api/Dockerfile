@@ -7,7 +7,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["Cinnabarlab.Api/Cinnabarlab.Api.csproj", "Cinnabarlab.Api/"]
+COPY ["Cinnabarlab.Api.csproj", "Cinnabarlab.Api/"]
 RUN dotnet restore "Cinnabarlab.Api/Cinnabarlab.Api.csproj"
 COPY . .
 WORKDIR "/src/Cinnabarlab.Api"
