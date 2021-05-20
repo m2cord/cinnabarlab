@@ -6,7 +6,7 @@ services:
 
   frontend:
     build:
-      context: frontend
+      context: frontend/cinnabarlab-frontend
       dockerfile: Dockerfile
     image: frontend_test
     ports:
@@ -15,10 +15,9 @@ services:
   backend:
     build:
       context: backend
-      target: debug
+      dockerfile: Dockerfile
     image: backend_test
     ports:
-      - '2345:2345' # for delve remote debugging
       - '8081:8080'
     security_opt:
       - 'seccomp:unconfined'

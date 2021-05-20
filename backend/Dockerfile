@@ -1,22 +1,32 @@
-#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+# syntax=docker/dockerfile:1
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build-env
+COPY Cinnabarlab.sln /src/
+COPY Cinnabarlab.Api/*.csproj /src/Cinnabarlab.Api/
+COPY Cinnabarlab.Data/*.csproj /src/Cinnabarlab.Data/
+COPY Cinnabarlab.Plugins/*.csproj /src/Cinnabarlab.Plugins/
+COPY Cinnabarlab.Plugins.Training/*.csproj /src/Cinnabarlab.Plugins.Training/
+COPY Cinnabarlab.Plugins.Blog/*.csproj /src/Cinnabarlab.Plugins.Blog/
 
-FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
-WORKDIR /app
-EXPOSE 80
-EXPOSE 443
-
-FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["Cinnabarlab.Api/Cinnabarlab.Api.csproj", "Cinnabarlab.Api/"]
-RUN dotnet restore "Cinnabarlab.Api/Cinnabarlab.Api.csproj"
+RUN dotnet restore
 COPY . .
-WORKDIR "/src/Cinnabarlab.Api"
-RUN dotnet build "Cinnabarlab.Api.csproj" -c Release -o /app/build
 
-FROM build AS publish
-RUN dotnet publish "Cinnabarlab.Api.csproj" -c Release -o /app/publish
+WORKDIR /src/Cinnabarlab.Data
+RUN dotnet build -c Release -o /app
 
-FROM base AS final
-WORKDIR /app
-COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Cinnabarlab.Api.dll"]
+WORKDIR /src/Cinnabarlab.Plugins
+RUN dotnet build -c Release -o /app
+
+WORKDIR /src/Cinnabarlab.Plugins.Training
+RUN dotnet build -c Release -o /app
+
+WORKDIR /src/Cinnabarlab.Plugins.Blog
+RUN dotnet build -c Release -o /app
+
+WORKDIR /src/Cinnabarlab.Api
+RUN dotnet build -c Release -o /app
+
+# Build runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:5.0
+COPY --from=build-env /app /
+ENTRYPOINT ["dotnet", "/Cinnabarlab.Api.dll"]
