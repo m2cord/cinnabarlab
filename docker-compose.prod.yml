@@ -14,9 +14,9 @@ services:
       - '443:443'
       - '127.0.0.1:8080:8080'
     volumes:
-      - '${PWD}/infrastructure/traefik.toml:/etc/traefik/traefik.toml'
-      - '${PWD}/infrastructure/ssl.toml:/etc/traefik/ssl.toml'
-      - '${PWD}/infrastructure/ssl:/etc/certs'
+      - './infrastructure/traefik.toml:/etc/traefik/traefik.toml'
+      - './infrastructure/ssl.toml:/etc/traefik/ssl.toml'
+      - './infrastructure/ssl:/etc/certs'
 
 networks:
   loadbalancer:
