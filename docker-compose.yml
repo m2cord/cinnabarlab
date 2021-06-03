@@ -1,0 +1,81 @@
+version: '3'
+services:
+  database:
+    image: 'postgres:latest'
+    restart: always
+    env_file:
+      - database.env
+    volumes:
+      - 'database-data:/var/lib/postgresql/data/'
+    networks:
+      - database
+
+  frontend:
+    image: 'docker.pkg.github.com/m2cord/cinnabarlab/frontend:latest'
+    restart: always
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.frontend-http.rule=Host(`${COMPOSE_SITE_NAME}`)
+      - traefik.http.routers.frontend-http.entrypoints=http
+      - traefik.http.routers.frontend-http.middlewares=redirect
+      - traefik.http.routers.frontend-https.rule=Host(`${COMPOSE_SITE_NAME}`)
+      - traefik.http.routers.frontend-https.entrypoints=https
+      - traefik.http.routers.frontend-https.tls=true
+      - traefik.http.services.frontend.loadbalancer.server.port=8080
+      - traefik.http.services.frontend.loadbalancer.healthcheck.interval=5s
+      - traefik.http.services.frontend.loadbalancer.healthcheck.timeout=2s
+      - traefik.http.middlewares.redirect.redirectscheme.scheme=https
+      - traefik.http.middlewares.redirect.redirectscheme.permanent=true
+      - traefik.docker.network=${COMPOSE_PROJECT_NAME}_frontend
+    networks:
+      - frontend
+    depends_on:
+      - loadbalancer
+      - backend
+    env_file:
+      - frontend.env
+
+  backend:
+    image: 'docker.pkg.github.com/m2cord/cinnabarlab/backend:latest'
+    restart: always
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.backend-http.rule=Host(`${COMPOSE_SITE_NAME}`) && PathPrefix(`/api`)
+      - traefik.http.routers.backend-http.entrypoints=http
+      - traefik.http.routers.backend-http.middlewares=redirect
+      - traefik.http.routers.backend-https.rule=Host(`${COMPOSE_SITE_NAME}`) && PathPrefix(`/api`)
+      - traefik.http.routers.backend-https.entrypoints=https
+      - traefik.http.routers.backend-https.tls=true
+      - traefik.http.services.backend.loadbalancer.server.port=8080
+      - traefik.http.services.backend.loadbalancer.healthcheck.interval=5s
+      - traefik.http.services.backend.loadbalancer.healthcheck.timeout=2s
+      - traefik.http.middlewares.redirect.redirectscheme.scheme=https
+      - traefik.http.middlewares.redirect.redirectscheme.permanent=true
+      - traefik.docker.network=${COMPOSE_PROJECT_NAME}_backend
+    networks:
+      - backend
+      - database
+    depends_on:
+      - database
+      - loadbalancer
+    env_file:
+      - backend.env
+
+  loadbalancer:
+    image: traefik
+    restart: always
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock:ro'
+    networks:
+      - backend
+      - frontend
+      - loadbalancer
+
+networks:
+  loadbalancer:
+  frontend:
+  backend:
+  database:
+    
+volumes:
+  database-data:

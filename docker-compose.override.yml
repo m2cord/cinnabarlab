@@ -1,0 +1,35 @@
+version: '3'
+services:
+  database:
+    ports:
+      - '5432:5432'
+
+  frontend:
+    build:
+      context: frontend/cinnabarlab-frontend
+      dockerfile: Dockerfile
+    image: frontend_test
+    ports:
+      - '8080:8080'
+
+  backend:
+    build:
+      context: backend
+      dockerfile: Dockerfile
+    image: backend_test
+    ports:
+      - '8081:80'
+    security_opt:
+      - 'seccomp:unconfined'
+    volumes:
+      - ./backend/:/app
+
+  loadbalancer:
+    volumes:
+      - './infrastructure/traefik.dev.toml:/etc/traefik/traefik.toml'
+      - './infrastructure/ssl.dev.toml:/etc/traefik/ssl.toml'
+      - './infrastructure/ssl:/etc/certs'
+    ports:
+      - '80:80'
+      - '443:443'
+      - '8082:8080'
