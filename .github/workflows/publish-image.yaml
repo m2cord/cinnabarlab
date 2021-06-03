@@ -1,7 +1,7 @@
 name: Create and publish a package
 on:
   push:
-    branches: ['rework']
+    branches: ['main', 'develop']
 jobs:
   build-backend:
     name: Build and Test Cinnabarlab API
