@@ -33,8 +33,7 @@ If it's the firt install of mkcert, run
 
 Generate certificate for domain "cinnabarlab.localhost", "cinnabarlab.local" and their sub-domains
 
-`mkcert -cert-file infrastructure/ssl/cert.pem -key-file infrastructure/ssl/key.pem 
-"docker.localhost" "*.docker.localhost" "cinnabarlab.local" "*.cinnabarlab.local"`
+`mkcert -cert-file infrastructure/ssl/cert.pem -key-file infrastructure/ssl/key.pem "cinnabarlab.localhost" "*.cinnabarlab.localhost"`
 
 Replace your backend.env, database.env, frontend.env with the most recent .env.template files configure according to your needs.
 
