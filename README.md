@@ -28,12 +28,16 @@ Cinnabarlab is developed and maintained by the authors mentioned above. Everyone
 Follow the instructions to get mkcert: https://github.com/FiloSottile/mkcert
 
 If it's the firt install of mkcert, run
+
 `mkcert -install`
 
 Generate certificate for domain "docker.localhost", "domain.local" and their sub-domains
-`mkcert -cert-file infrastructure/ssl/cert.pem -key-file infrastructure/ssl/key.pem \ 
+
+`mkcert -cert-file infrastructure/ssl/cert.pem -key-file infrastructure/ssl/key.pem 
 "docker.localhost" "*.docker.localhost" "domain.local" "*.domain.local"`
 
 Replace your backend.env, database.env, frontend.env with the most recent .env.template files configure according to your needs.
+
 run `docker-compose -f docker-compose.yml -f docker-compose.override.yml up` in the root folder of this repository.
+
 After all containers have started up, the frontend is available @ https://cinnabarlab.localhost:443.
