@@ -24,5 +24,6 @@ Cinnabarlab is developed and maintained by the authors mentioned above. Everyone
  - Recommended: Visual Studio 2019 (IDE for backend development)
 
 ## How to Run an Instance of Cinnabarlab
+Replace your backend.env, database.env, frontend.env with the most recent .env.template files configure according to your needs.
 run `docker-compose -f docker-compose.yml -f docker-compose.override.yml up` in the root folder of this repository.
 After all containers have started up, the frontend is available @ https://cinnabarlab.localhost:443.
