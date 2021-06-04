@@ -50,13 +50,13 @@ services:
     restart: always
     labels:
       - traefik.enable=true
-      - traefik.http.routers.backend-http.rule=Host(`${COMPOSE_SITE_NAME}`) && PathPrefix(`/api`)
+      - traefik.http.routers.backend-http.rule=Host(`${COMPOSE_SITE_NAME}`) && PathPrefix(`/api/`)
       - traefik.http.routers.backend-http.entrypoints=http
       - traefik.http.routers.backend-http.middlewares=redirect
-      - traefik.http.routers.backend-https.rule=Host(`${COMPOSE_SITE_NAME}`) && PathPrefix(`/api`)
+      - traefik.http.routers.backend-https.rule=Host(`${COMPOSE_SITE_NAME}`) && PathPrefix(`/api/`)
       - traefik.http.routers.backend-https.entrypoints=https
       - traefik.http.routers.backend-https.tls=true
-      - traefik.http.services.backend.loadbalancer.server.port=8080
+      - traefik.http.services.backend.loadbalancer.server.port=80
       - traefik.http.services.backend.loadbalancer.healthcheck.interval=5s
       - traefik.http.services.backend.loadbalancer.healthcheck.timeout=2s
       - traefik.http.middlewares.redirect.redirectscheme.scheme=https
