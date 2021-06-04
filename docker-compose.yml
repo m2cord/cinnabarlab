@@ -9,6 +9,16 @@ services:
       - 'database-data:/var/lib/postgresql/data/'
     networks:
       - database
+      
+  database_id:
+    image: 'postgres:latest'
+    restart: always
+    env_file:
+      - database_id.env
+    volumes:
+      - 'database_id-data:/var/lib/postgresql/data/'
+    networks:
+      - database
 
   frontend:
     image: 'docker.pkg.github.com/m2cord/cinnabarlab/frontend:latest'
@@ -57,6 +67,7 @@ services:
       - database
     depends_on:
       - database
+      - database_id
       - loadbalancer
     env_file:
       - backend.env
@@ -79,3 +90,4 @@ networks:
     
 volumes:
   database-data:
+  database_id-data:

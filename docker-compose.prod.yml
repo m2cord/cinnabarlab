@@ -27,3 +27,5 @@ networks:
     internal: true
   database:
     internal: true
+  database_id:
+    internal: true

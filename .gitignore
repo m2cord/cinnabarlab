@@ -3,7 +3,9 @@
 /**/bin
 /**/obj
 /**/packages
+/**/.vs
 
 /backend.env
 /frontend.env
 /database.env
+/database_id.env

@@ -4,6 +4,10 @@ services:
     ports:
       - '5432:5432'
 
+  database_id:
+    ports:
+      - '5433:5432'
+
   frontend:
     build:
       context: frontend/cinnabarlab-frontend
