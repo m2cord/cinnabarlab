@@ -27,7 +27,7 @@ Cinnabarlab is developed and maintained by the authors mentioned above. Everyone
 
 Follow the instructions to get mkcert: https://github.com/FiloSottile/mkcert
 
-If it's the firt install of mkcert, run
+If it's the first install of mkcert, run
 
 `mkcert -install`
 
