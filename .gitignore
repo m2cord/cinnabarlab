@@ -9,3 +9,6 @@
 /frontend.env
 /database.env
 /database_id.env
+
+infrastructure/ssl/key.pem
+infrastructure/ssl/cert.pem
