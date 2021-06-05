@@ -1,0 +1,132 @@
+_type: export
+__export_format: 4
+__export_date: 2021-06-05T01:25:42.880Z
+__export_source: insomnia.desktop.app:v2021.3.0
+resources:
+  - _id: req_ed20713f2a2441018d75ae3393028250
+    parentId: fld_1492f66e36cf411983cbdee54596bb70
+    modified: 1622855744404
+    created: 1622855055580
+    url: http://localhost:8081/api/blog
+    name: RootGet
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1622855055580
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_1492f66e36cf411983cbdee54596bb70
+    parentId: wrk_33f868e89efb4f4b9f8b251221db6bb3
+    modified: 1622836144400
+    created: 1622836144400
+    name: Blog
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1622836144400
+    _type: request_group
+  - _id: wrk_33f868e89efb4f4b9f8b251221db6bb3
+    parentId: null
+    modified: 1622836055601
+    created: 1622836055601
+    name: Cinnabarlab
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_b88e946e0c9444c5af8e252983bc6967
+    parentId: fld_a0f76ab0ae694a0f9353de666a17688c
+    modified: 1622855768797
+    created: 1622836257281
+    url: http://localhost:8081/api/auth/signin
+    name: SignIn
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1622836257281
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_a0f76ab0ae694a0f9353de666a17688c
+    parentId: wrk_33f868e89efb4f4b9f8b251221db6bb3
+    modified: 1622836122657
+    created: 1622836122657
+    name: Auth
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1622836122657
+    _type: request_group
+  - _id: req_6ea5fb2ca83f4b97af788f277be8818b
+    parentId: fld_a0f76ab0ae694a0f9353de666a17688c
+    modified: 1622855909777
+    created: 1622836208081
+    url: http://localhost:8081/api/Auth/SignUp
+    name: SignUp
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username": "testuser",
+        	"password": "test",
+        	"email": "test@mail.com"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_5ee2501f1ff84ee3a77d0dc9acb2ffa5
+    authentication: {}
+    metaSortKey: -1622836208081
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_074ae0d6d97642e71d81ad6662f47d7f11ceb4bd
+    parentId: wrk_33f868e89efb4f4b9f8b251221db6bb3
+    modified: 1622836055669
+    created: 1622836055669
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1622836055669
+    _type: environment
+  - _id: jar_074ae0d6d97642e71d81ad6662f47d7f11ceb4bd
+    parentId: wrk_33f868e89efb4f4b9f8b251221db6bb3
+    modified: 1622836055671
+    created: 1622836055671
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_82882b9c436a4d1a8cc91e04abc00aa7
+    parentId: wrk_33f868e89efb4f4b9f8b251221db6bb3
+    modified: 1622836055604
+    created: 1622836055604
+    fileName: Cinnabarlab
+    contents: ""
+    contentType: yaml
+    _type: api_spec
