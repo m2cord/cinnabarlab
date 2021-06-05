@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
@@ -89,10 +90,7 @@ namespace Cinnabarlab.Infrastructure.Services.Authentication
                 return new CinnabarlabSignUpResult
                 {
                     Result = false,
-                    Errors = new List<string>
-                    {
-                        "Invalid Parameters"
-                    }
+                    Errors = isCreated.Errors.Select(errors => errors.Description).ToList()
                 };
             }
 

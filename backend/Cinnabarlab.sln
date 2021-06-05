@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinnabarlab.Plugins.Blog", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinnabarlab.Plugins.Training", "Cinnabarlab.Plugins.Training\Cinnabarlab.Plugins.Training.csproj", "{C7962883-9055-41AC-931B-8EE9390F9646}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinnabarlab.Infrastructure", "Cinnabarlab.Infrastructure\Cinnabarlab.Infrastructure.csproj", "{1FC5A33F-FE1E-472B-8E83-FFF545B371E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinnabarlab.Infrastructure", "Cinnabarlab.Infrastructure\Cinnabarlab.Infrastructure.csproj", "{1FC5A33F-FE1E-472B-8E83-FFF545B371E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinnabarlab.Data.Migrations", "Cinnabarlab.Data.Migrations\Cinnabarlab.Data.Migrations.csproj", "{AE29037E-BC1B-46EC-BDB1-78F459AA1C11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +99,18 @@ Global
 		{1FC5A33F-FE1E-472B-8E83-FFF545B371E2}.Release|x64.Build.0 = Release|Any CPU
 		{1FC5A33F-FE1E-472B-8E83-FFF545B371E2}.Release|x86.ActiveCfg = Release|Any CPU
 		{1FC5A33F-FE1E-472B-8E83-FFF545B371E2}.Release|x86.Build.0 = Release|Any CPU
+		{AE29037E-BC1B-46EC-BDB1-78F459AA1C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE29037E-BC1B-46EC-BDB1-78F459AA1C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE29037E-BC1B-46EC-BDB1-78F459AA1C11}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AE29037E-BC1B-46EC-BDB1-78F459AA1C11}.Debug|x64.Build.0 = Debug|Any CPU
+		{AE29037E-BC1B-46EC-BDB1-78F459AA1C11}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AE29037E-BC1B-46EC-BDB1-78F459AA1C11}.Debug|x86.Build.0 = Debug|Any CPU
+		{AE29037E-BC1B-46EC-BDB1-78F459AA1C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE29037E-BC1B-46EC-BDB1-78F459AA1C11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE29037E-BC1B-46EC-BDB1-78F459AA1C11}.Release|x64.ActiveCfg = Release|Any CPU
+		{AE29037E-BC1B-46EC-BDB1-78F459AA1C11}.Release|x64.Build.0 = Release|Any CPU
+		{AE29037E-BC1B-46EC-BDB1-78F459AA1C11}.Release|x86.ActiveCfg = Release|Any CPU
+		{AE29037E-BC1B-46EC-BDB1-78F459AA1C11}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

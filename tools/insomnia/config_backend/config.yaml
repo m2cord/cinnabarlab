@@ -1,21 +1,27 @@
 _type: export
 __export_format: 4
-__export_date: 2021-06-05T01:25:42.880Z
+__export_date: 2021-06-05T16:51:49.480Z
 __export_source: insomnia.desktop.app:v2021.3.0
 resources:
-  - _id: req_ed20713f2a2441018d75ae3393028250
+  - _id: req_dffb26fb75064c64bcbc505e899c7b86
     parentId: fld_1492f66e36cf411983cbdee54596bb70
-    modified: 1622855744404
-    created: 1622855055580
-    url: http://localhost:8081/api/blog
-    name: RootGet
+    modified: 1622911856123
+    created: 1622911422304
+    url: http://localhost:8081/api/Admin/Blog
+    name: AdminGet
     description: ""
     method: GET
     body: {}
     parameters: []
-    headers: []
-    authentication: {}
-    metaSortKey: -1622855055580
+    headers:
+      - name: ""
+        value: ""
+        description: ""
+        id: pair_c8142e7eca934253b671b94fad0ea2eb
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImM2ZjEwYmU3LTQxYjEtNGZjMi1hZThjLTg5MWFlM2FkOGZlNSIsInN1YiI6InRlc3RAbWFpbC5jb20iLCJlbWFpbCI6InRlc3RAbWFpbC5jb20iLCJqdGkiOiIyMjQ5ZTRiMC01YTdhLTQ5ODktYmE1ZC02N2ZhM2M3ZTc5YWQiLCJuYmYiOjE2MjI5MTEzMDgsImV4cCI6MTYyMjk1NDUwOCwiaWF0IjoxNjIyOTExMzA4fQ.Xd1zLO3pDokcuB7mb-M-5M0ZwXq0QBSzMscIAXl0SL5_F7jQ-HAOlJ0pULiHSN0hjoRRoctKwELvclWkTTbTnw
+    metaSortKey: -1622911422304
     isPrivate: false
     settingStoreCookies: true
     settingSendCookies: true
@@ -42,17 +48,47 @@ resources:
     description: ""
     scope: collection
     _type: workspace
+  - _id: req_ed20713f2a2441018d75ae3393028250
+    parentId: fld_1492f66e36cf411983cbdee54596bb70
+    modified: 1622855744404
+    created: 1622855055580
+    url: http://localhost:8081/api/blog
+    name: RootGet
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1622855055580
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
   - _id: req_b88e946e0c9444c5af8e252983bc6967
     parentId: fld_a0f76ab0ae694a0f9353de666a17688c
-    modified: 1622855768797
+    modified: 1622911304382
     created: 1622836257281
     url: http://localhost:8081/api/auth/signin
     name: SignIn
     description: ""
     method: POST
-    body: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username": "testuser",
+        	"password": "1234;:QwErT"
+        }
     parameters: []
-    headers: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_758a7775339e40f4a8a83b48932e305d
     authentication: {}
     metaSortKey: -1622836257281
     isPrivate: false
@@ -75,7 +111,7 @@ resources:
     _type: request_group
   - _id: req_6ea5fb2ca83f4b97af788f277be8818b
     parentId: fld_a0f76ab0ae694a0f9353de666a17688c
-    modified: 1622855909777
+    modified: 1622911793301
     created: 1622836208081
     url: http://localhost:8081/api/Auth/SignUp
     name: SignUp
@@ -86,7 +122,7 @@ resources:
       text: |-
         {
         	"username": "testuser",
-        	"password": "test",
+        	"password": "1234;:QwErT",
         	"email": "test@mail.com"
         }
     parameters: []

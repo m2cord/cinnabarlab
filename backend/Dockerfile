@@ -3,6 +3,7 @@ FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build-env
 COPY Cinnabarlab.sln /src/
 COPY Cinnabarlab.Api/*.csproj /src/Cinnabarlab.Api/
 COPY Cinnabarlab.Data/*.csproj /src/Cinnabarlab.Data/
+COPY Cinnabarlab.Data.Migrations/*.csproj /src/Cinnabarlab.Data.Migrations/
 COPY Cinnabarlab.Infrastructure/*.csproj /src/Cinnabarlab.Infrastructure/
 COPY Cinnabarlab.Plugins/*.csproj /src/Cinnabarlab.Plugins/
 COPY Cinnabarlab.Plugins.Training/*.csproj /src/Cinnabarlab.Plugins.Training/
