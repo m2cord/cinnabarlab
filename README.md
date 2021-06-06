@@ -1,9 +1,12 @@
 # Welcome to Cinnabarlab!
 
 Authors:
+
 @BeldorTN: [dcastelberg@GitHub](https://github.com/dcastelberg)
+
 @Krujo: [JonasKru@GitHub](https://github.com/JonasKru)
-@NotTheRealOne: <TODO: Add Github Account>
+
+@NotTheRealOne: [OliverWilcox@GitHub](https://github.com/OliverWilcox)
 
 # What is Cinnabarlab?
 
