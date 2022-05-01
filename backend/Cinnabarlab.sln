@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinnabarlab.Plugins.Trainin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinnabarlab.Infrastructure", "Cinnabarlab.Infrastructure\Cinnabarlab.Infrastructure.csproj", "{1FC5A33F-FE1E-472B-8E83-FFF545B371E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinnabarlab.Data.Migrations", "Cinnabarlab.Data.Migrations\Cinnabarlab.Data.Migrations.csproj", "{AE29037E-BC1B-46EC-BDB1-78F459AA1C11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinnabarlab.Data.Migrations", "Cinnabarlab.Data.Migrations\Cinnabarlab.Data.Migrations.csproj", "{AE29037E-BC1B-46EC-BDB1-78F459AA1C11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinnabarlab.Infrastructure.Slippi", "Cinnabarlab.Infrastructure.Slippi\Cinnabarlab.Infrastructure.Slippi.csproj", "{07424B9E-0CEA-40D2-BFCD-13EB124B67EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
